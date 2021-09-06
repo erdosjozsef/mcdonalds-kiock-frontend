@@ -1,0 +1,72 @@
+.logo {
+  width: auto;
+  height: 226px;
+}
+.primary_block {
+  padding-top: 100px;
+  background: #ff2040;
+}
+
+.subtitle {
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  /* padding-top: 9px; */
+  /* margin-left: 20px; */
+}
+
+.choice_image {
+  background: white;
+}
+.overlay_text {
+  position: absolute;
+}
+.eatin_icon {
+  font-size: 164px;
+}
+
+ion-icon {
+  font-size: 176px;
+}
+ion-icon {
+  color: white;
+}
+
+.action_button_eat {
+  background-color: #00b020;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-left: 31px;
+  padding-top: 5px;
+}
+
+.action_button_order {
+  background-color: #00b020;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-left: 17px;
+  padding-top: 5px;
+}

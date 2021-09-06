@@ -1,0 +1,33 @@
+.primary-block {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  background: #ff2040;
+}
+
+.second-block {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  /* padding-top: 40px;
+  margin-bottom: 40px; */
+}
+
+.title-size {
+  font-size: 90px !important;
+}
+
+.subtitle {
+  font-size: 25px;
+  /* padding-top: 9px; */
+  /* margin-left: 20px; */
+}
+
+.background-click {
+  background: #00b020;
+}
+
+.logo {
+  width: auto;
+  height: 51px;
+}
