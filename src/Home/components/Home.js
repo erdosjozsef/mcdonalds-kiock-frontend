@@ -4,8 +4,6 @@ import "./Home.css";
 import logo from "./logo.png";
 
 const Home = () => {
-  // const navigateToSelectHandler = () => history.push("/mypage");
-
   return (
     <React.Fragment>
       <Link to={`/choice`} style={{ textDecoration: "none" }}>
