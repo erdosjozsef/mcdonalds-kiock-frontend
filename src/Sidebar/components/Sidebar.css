@@ -8,7 +8,7 @@ html {
   background-image: url("./banner.png");
 
   /* Full height */
-  height: 100%;
+  height: 300px;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -36,8 +36,19 @@ html {
   width: 0px;
   background: transparent; /* make scrollbar transparent */
 }
+.category_sidebar_name {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.category_logo {
+  cursor: pointer;
+}
 
 .category_name {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
   cursor: pointer;
   /* background-color: darkgreen; */
 }
@@ -56,10 +67,11 @@ html {
 .product_image {
   width: 78%;
   height: auto;
-  cursor: pointer;
 }
 
 .top-right {
+  font-family: "Poppins", sans-serif;
+  font-size: 600;
   position: absolute;
   top: 43px;
   right: 45px;

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Home/pages/Home";
 import Choice from "./Choice/pages/Choice";
 import Order from "./Order/pages/Order";
+import Banner from "./Shared/components/Banner";
 const App = () => {
   return (
     <Router>

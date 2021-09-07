@@ -1,29 +1,31 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
 import "./ProductItem.css";
-import hamburger from "./hamburger.png";
+import Modal from "../../Shared/components/Modal";
 
 const ProductItem = (props) => {
+  const [showModal, setShowModal] = useState(false);
+
+  const showModalHandler = () => {
+    setShowModal(true);
+  };
+
+  const hideModalHandler = () => {
+    setShowModal(false);
+  };
+
   return (
-    <div className="col-sm-11">
-      <div className="row product-list">
-        {props.items.map((product) => (
-          <div key={product.id} className="col-md-3">
-            <section className="panel">
-              <img className="image-box" src={hamburger} alt="" />
-              <div className="panel-body text-center">
-                <h4>
-                  <Link to="#" className="pro-title">
-                    Leopard Shirt Dress
-                  </Link>
-                </h4>
-                <p className="price">$300.00</p>
-              </div>
-            </section>
-          </div>
-        ))}
+    <React.Fragment>
+      <div class="col-md-4">
+        <img
+          src={props.imageUrl}
+          alt=""
+          class="img-fluid rounded-circle product_image"
+        />
+        <h5 class="category_name">{props.name}</h5>
+        <div class="top-right">${props.price}</div>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

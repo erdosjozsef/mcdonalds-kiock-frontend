@@ -67,6 +67,7 @@ const Select = () => {
               <div>
                 <ion-icon name="bag-handle-outline"></ion-icon>
               </div>
+              {/* <Link to="order"> */}
               <div className={`${classes.imgButton}`}>
                 <button
                   onClick={setTakeOutHandler}
@@ -75,6 +76,7 @@ const Select = () => {
                   Take Out
                 </button>
               </div>
+              {/* </Link> */}
             </div>
           </div>
         </div>
