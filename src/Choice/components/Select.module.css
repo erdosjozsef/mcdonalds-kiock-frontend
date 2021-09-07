@@ -12,8 +12,6 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: white;
-  /* padding-top: 9px; */
-  /* margin-left: 20px; */
 }
 
 .choice_image {
@@ -22,14 +20,9 @@
 .overlay_text {
   position: absolute;
 }
-.eatin_icon {
-  font-size: 164px;
-}
 
 ion-icon {
   font-size: 176px;
-}
-ion-icon {
   color: white;
 }
 

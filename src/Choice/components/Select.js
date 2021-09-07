@@ -1,10 +1,28 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { eatActions } from "../../store/eat-type";
 import logo from "./logo.png";
 import classes from "./Select.module.css";
-import eatin from "./eatin.svg";
-import takeout from "./takeout.png";
 
 const Select = () => {
+  const dispatch = useDispatch();
+
+  const setInEatHandler = () => {
+    dispatch(
+      eatActions.selectEatType({
+        eatType: 1,
+      })
+    );
+  };
+
+  const setTakeOutHandler = () => {
+    dispatch(
+      eatActions.selectEatType({
+        eatType: 2,
+      })
+    );
+  };
+
   return (
     <div>
       <div className={`container ${classes.primary_block}`}>
@@ -18,13 +36,13 @@ const Select = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col ">
+          <div className="col">
             <p className={`${classes.subtitle} text-center`}>
               Where will you be eating today?
             </p>
           </div>
         </div>
-        <div class="row ">
+        <div class="row">
           <div class="col-sm d-flex justify-content-around mb-5">
             <div class="imgContainer">
               <div>
@@ -34,7 +52,10 @@ const Select = () => {
                 ></ion-icon>
               </div>
               <div class={`${classes.imgButton}`}>
-                <button className={`${classes.action_button_eat}`}>
+                <button
+                  onClick={setInEatHandler}
+                  className={`${classes.action_button_eat}`}
+                >
                   Eat In
                 </button>
               </div>
@@ -47,7 +68,10 @@ const Select = () => {
                 <ion-icon name="bag-handle-outline"></ion-icon>
               </div>
               <div className={`${classes.imgButton}`}>
-                <button className={`${classes.action_button_order}`}>
+                <button
+                  onClick={setTakeOutHandler}
+                  className={`${classes.action_button_order}`}
+                >
                   Take Out
                 </button>
               </div>
