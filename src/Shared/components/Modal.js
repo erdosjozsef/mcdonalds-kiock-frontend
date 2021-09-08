@@ -49,8 +49,6 @@ const Modal = (props) => {
         <div className="row">
           {props.extraItem.map((product) => (
             <div
-              // onClick={addToCartHandler}
-              // onClick={handleClick(product); }
               onClick={addToCartHandler(product)}
               key={product.id}
               className="col-md-4 select_product"
