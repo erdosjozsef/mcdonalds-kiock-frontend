@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { eatActions } from "../../store/eat-type";
 import logo from "./logo.png";
@@ -51,14 +52,16 @@ const Select = () => {
                   name="fast-food-outline"
                 ></ion-icon>
               </div>
-              <div class={`${classes.imgButton}`}>
-                <button
-                  onClick={setInEatHandler}
-                  className={`${classes.action_button_eat}`}
-                >
-                  Eat In
-                </button>
-              </div>
+              <Link to="/order">
+                <div class={`${classes.imgButton}`}>
+                  <button
+                    onClick={setInEatHandler}
+                    className={`${classes.action_button_eat}`}
+                  >
+                    Eat In
+                  </button>
+                </div>
+              </Link>
             </div>
           </div>
 
@@ -67,16 +70,16 @@ const Select = () => {
               <div>
                 <ion-icon name="bag-handle-outline"></ion-icon>
               </div>
-              {/* <Link to="order"> */}
-              <div className={`${classes.imgButton}`}>
-                <button
-                  onClick={setTakeOutHandler}
-                  className={`${classes.action_button_order}`}
-                >
-                  Take Out
-                </button>
-              </div>
-              {/* </Link> */}
+              <Link to="order">
+                <div className={`${classes.imgButton}`}>
+                  <button
+                    onClick={setTakeOutHandler}
+                    className={`${classes.action_button_order}`}
+                  >
+                    Take Out
+                  </button>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

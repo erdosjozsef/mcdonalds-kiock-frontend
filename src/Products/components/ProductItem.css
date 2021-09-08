@@ -62,7 +62,9 @@ html {
 .top-right {
   position: absolute;
   top: 43px;
-  right: 45px;
+  right: 25px !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   font-size: x-large;
   color: #ff2040;
 }

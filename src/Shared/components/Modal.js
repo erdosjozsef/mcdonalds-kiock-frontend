@@ -6,23 +6,13 @@ import { useDispatch } from "react-redux";
 const Modal = (props) => {
   const dispatch = useDispatch();
 
-  // const addToCartHandler = () => {
-  // dispatch(
-  //   cartActions.addItemToCart({
-  //     id: 1,
-  //     name: "test",
-  //     price: 33,
-  //   })
-  // );
-  // props.onCloseModal();
-  // };
-
   const addToCartHandler = (product) => () => {
     dispatch(
       cartActions.addItemToCart({
         id: product.id,
         name: product.name,
         price: product.price,
+        imageUrl: product.imageUrl,
       })
     );
     props.onCloseModal();

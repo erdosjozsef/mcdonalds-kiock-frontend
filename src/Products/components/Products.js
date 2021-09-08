@@ -4,7 +4,7 @@ import ProductChildren from "./ProductChildren";
 const DUMMY_PRODUCTS = [
   {
     id: "1",
-    price: 12,
+    price: 12.55,
     name: "Big Mac™",
     imageUrl:
       "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/McChicken.png?itok=d3RF6nf9",
@@ -12,14 +12,14 @@ const DUMMY_PRODUCTS = [
       {
         id: "1",
         name: "Big Mac™",
-        price: 5,
+        price: 5.55,
         imageUrl:
           "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/McChicken.png?itok=d3RF6nf9",
       },
       {
         id: "2",
         name: "Big Mac™ + Cola",
-        price: 15,
+        price: 7.9,
         imageUrl:
           "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/McChicken.png?itok=d3RF6nf9",
       },
@@ -159,7 +159,6 @@ const Product = () => {
             name={product.name}
             price={product.price}
             extra={product.extras}
-            image={product.imageUrl}
             extraItem={product.extras}
           />
         ))}
