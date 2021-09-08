@@ -2,24 +2,30 @@ import React from "react";
 import "./Modal.css";
 import { cartActions } from "../../store/cart-slice";
 import { useDispatch } from "react-redux";
-import productImage from "./hamburger.webp";
+
 const Modal = (props) => {
   const dispatch = useDispatch();
-  // const { id, name, price } = props.extras;
 
-  const addToCartHandler = () => {
-    // console.log("id", test);
-    console.log(props.extras[2].name);
-    console.log(props.extras.id);
+  // const addToCartHandler = () => {
+  // dispatch(
+  //   cartActions.addItemToCart({
+  //     id: 1,
+  //     name: "test",
+  //     price: 33,
+  //   })
+  // );
+  // props.onCloseModal();
+  // };
 
+  const addToCartHandler = (product) => () => {
     dispatch(
       cartActions.addItemToCart({
-        id: 1,
-        name: "test",
-        price: 33,
+        id: product.id,
+        name: product.name,
+        price: product.price,
       })
     );
-    props.onClose();
+    props.onCloseModal();
   };
 
   return (
@@ -30,41 +36,34 @@ const Modal = (props) => {
             Make your choice
           </div>
           <div className="col-md-6 d-flex justify-content-end">
-            <button type="button" className="btn btn-danger close_modal">
+            <button
+              onClick={props.onCloseModal}
+              type="button"
+              className="btn btn-danger close_modal"
+            >
               Back
             </button>
           </div>
         </div>
         <div className="nav-bar"></div>
         <div className="row">
-          <div className="col-md-4">
-            <img
-              src={productImage}
-              alt=""
-              className="img-fluid rounded-circle product_image_popup"
-            />
-            <h5 className="cart_product_name">Happy Meals</h5>
-
-            <div className="product_image_popup_price">$15</div>
-          </div>
-          <div className="col-md-4">
-            <img
-              src={productImage}
-              alt=""
-              className="img-fluid rounded-circle product_image_popup"
-            />
-            <h5 className="cart_product_name">Happy Meals</h5>
-            <div className="product_image_popup_price">$15</div>
-          </div>
-          <div className="col-md-4">
-            <img
-              src={productImage}
-              alt=""
-              className="img-fluid rounded-circle product_image_popup"
-            />
-            <h5 className="cart_product_name">Happy Meals</h5>
-            <div className="product_image_popup_price">$15</div>
-          </div>
+          {props.extraItem.map((product) => (
+            <div
+              // onClick={addToCartHandler}
+              // onClick={handleClick(product); }
+              onClick={addToCartHandler(product)}
+              key={product.id}
+              className="col-md-4 select_product"
+            >
+              <img
+                src={product.imageUrl}
+                alt={product.name}
+                className="img-fluid rounded-circle product_image_popup"
+              />
+              <h5 className="cart_product_name">{product.name}</h5>
+              <div className="product_image_popup_price">${product.price}</div>
+            </div>
+          ))}
         </div>
       </div>
     </React.Fragment>

@@ -50,3 +50,7 @@
   height: 10px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.25);
 }
+
+.select_product {
+  cursor: pointer;
+}

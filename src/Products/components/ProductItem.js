@@ -1,13 +1,10 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
-import ReactDOM from "react-dom";
-import { cartActions } from "../../store/cart-slice";
+
 import "./ProductItem.css";
 import Modal from "../../Shared/components/Modal";
 
 const ProductItem = (props) => {
-  const [showModal, setShowModal] = useState(true);
-  const dispatch = useDispatch();
+  const [showModal, setShowModal] = useState(false);
 
   const showModalHandler = () => {
     setShowModal(true);
@@ -17,19 +14,9 @@ const ProductItem = (props) => {
     setShowModal(false);
   };
 
-  const addToCartHandler = () => {
-    dispatch(
-      cartActions.addItemToCart({
-        id: 1,
-        title: "hello",
-        price: 12,
-      })
-    );
-  };
-
   return (
     <React.Fragment>
-      <div onClick={addToCartHandler} class="col-md-4">
+      <div onClick={showModalHandler} class="col-md-4">
         <img
           src={props.imageUrl}
           alt=""
@@ -38,7 +25,9 @@ const ProductItem = (props) => {
         <h5 class="category_name">{props.name}</h5>
         <div class="top-right">${props.price}</div>
       </div>
-      {showModal && <Modal />}
+      {showModal && (
+        <Modal onCloseModal={hideModalHandler} extraItem={props.extraItem} />
+      )}
     </React.Fragment>
   );
 };

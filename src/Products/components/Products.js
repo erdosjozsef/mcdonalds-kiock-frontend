@@ -9,9 +9,27 @@ const DUMMY_PRODUCTS = [
     imageUrl:
       "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/McChicken.png?itok=d3RF6nf9",
     extras: [
-      { id: "1", name: "Big Mac™", price: 5 },
-      { id: "2", name: "Big Mac™ + Cola", price: 15 },
-      { id: "3", name: "Big Mac™++", price: 20 },
+      {
+        id: "1",
+        name: "Big Mac™",
+        price: 5,
+        imageUrl:
+          "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/McChicken.png?itok=d3RF6nf9",
+      },
+      {
+        id: "2",
+        name: "Big Mac™ + Cola",
+        price: 15,
+        imageUrl:
+          "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/McChicken.png?itok=d3RF6nf9",
+      },
+      {
+        id: "3",
+        name: "Big Mac™++",
+        price: 20,
+        imageUrl:
+          "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/McChicken.png?itok=d3RF6nf9",
+      },
     ],
   },
   {
@@ -21,9 +39,27 @@ const DUMMY_PRODUCTS = [
     imageUrl:
       "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/McChicken.png?itok=d3RF6nf9",
     extras: [
-      { id: "1", name: "McToast™", price: 6 },
-      { id: "2", name: "McToast™ + Potato", price: 12 },
-      { id: "3", name: "Family McToast™", price: 16 },
+      {
+        id: "1",
+        name: "McToast™",
+        price: 6,
+        imageUrl:
+          "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/McChicken.png?itok=d3RF6nf9",
+      },
+      {
+        id: "2",
+        name: "McToast™ + Potato",
+        price: 12,
+        imageUrl:
+          "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/McChicken.png?itok=d3RF6nf9",
+      },
+      {
+        id: "3",
+        name: "Family McToast™",
+        price: 16,
+        imageUrl:
+          "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/McChicken.png?itok=d3RF6nf9",
+      },
     ],
   },
   {
@@ -33,9 +69,27 @@ const DUMMY_PRODUCTS = [
     imageUrl:
       "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/Dublu_cheeseburger.png?itok=_XPObYJA",
     extras: [
-      { id: "1", name: "Royal Deluxe", price: 6 },
-      { id: "2", name: "Royal Deluxe + Cola", price: 5 },
-      { id: "3", name: "Royal Deluxe + Potato + Cola", price: 11 },
+      {
+        id: "1",
+        name: "Royal Deluxe",
+        price: 6,
+        imageUrl:
+          "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/Dublu_cheeseburger.png?itok=_XPObYJA",
+      },
+      {
+        id: "2",
+        name: "Royal Deluxe + Cola",
+        price: 5,
+        imageUrl:
+          "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/Dublu_cheeseburger.png?itok=_XPObYJA",
+      },
+      {
+        id: "3",
+        name: "Royal Deluxe + Potato + Cola",
+        price: 11,
+        imageUrl:
+          "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/Dublu_cheeseburger.png?itok=_XPObYJA",
+      },
     ],
   },
   {
@@ -45,9 +99,20 @@ const DUMMY_PRODUCTS = [
     imageUrl:
       "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/McChicken.png?itok=d3RF6nf9",
     extras: [
-      { id: "1", name: "Royal Deluxe", price: 6 },
-      { id: "2", name: "Royal Deluxe + Cola", price: 5 },
-      { id: "3", name: "Royal Deluxe + Potato + Cola", price: 11 },
+      {
+        id: "1",
+        name: "Royal Deluxe",
+        price: 6,
+        imageUrl:
+          "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/McChicken.png?itok=d3RF6nf9",
+      },
+      {
+        id: "2",
+        name: "Royal Deluxe + Cola",
+        price: 5,
+        imageUrl:
+          "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/McChicken.png?itok=d3RF6nf9",
+      },
     ],
   },
   {
@@ -57,9 +122,27 @@ const DUMMY_PRODUCTS = [
     imageUrl:
       "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/Meniu_Big_Mac.png?itok=pnrRX8HJ",
     extras: [
-      { id: "1", name: "Royal Deluxe", price: 6 },
-      { id: "2", name: "Royal Deluxe + Cola", price: 5 },
-      { id: "3", name: "Royal Deluxe + Potato + Cola", price: 11 },
+      {
+        id: "1",
+        name: "Royal Deluxe",
+        price: 6,
+        imageUrl:
+          "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/Meniu_Big_Mac.png?itok=pnrRX8HJ",
+      },
+      {
+        id: "2",
+        name: "Royal Deluxe + Cola",
+        price: 5,
+        imageUrl:
+          "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/Meniu_Big_Mac.png?itok=pnrRX8HJ",
+      },
+      {
+        id: "3",
+        name: "Royal Deluxe + Potato + Cola",
+        price: 11,
+        imageUrl:
+          "https://www.mcdonalds.ro/sites/default/files/styles/500x500/public/field_product_image/2021-03/Meniu_Big_Mac.png?itok=pnrRX8HJ",
+      },
     ],
   },
 ];
