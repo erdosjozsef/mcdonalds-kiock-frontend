@@ -107,3 +107,7 @@ html {
 ion-icon {
   font-size: 30px;
 }
+
+ion-icon {
+  color: black;
+}

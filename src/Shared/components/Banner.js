@@ -1,11 +1,7 @@
-import banner from "./banner.png";
+import React from "react";
 
 const Banner = () => {
-  return (
-    <div className="container w-75">
-      <img src={banner} alt="s" />
-    </div>
-  );
+  return <div class="container bg"></div>;
 };
 
 export default Banner;
