@@ -1,7 +1,6 @@
 import React from "react";
 import SidebarItem from "./SidebarItem";
 import SidebarChildren from "./SidebarChildren";
-import "./Sidebar.css";
 
 const DUMMY_DATA = [
   {

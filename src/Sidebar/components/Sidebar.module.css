@@ -1,0 +1,17 @@
+.sidebar {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-top: 15px;
+  overflow-y: scroll;
+  height: 600px;
+  border-radius: 4px;
+}
+.mcdonalds_logo {
+  width: 50%;
+  height: auto;
+}
+
+.category_sidebar_name {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}

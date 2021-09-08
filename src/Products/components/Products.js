@@ -1,6 +1,7 @@
 import React from "react";
 import ProductItem from "./ProductItem";
 import ProductChildren from "./ProductChildren";
+
 const DUMMY_PRODUCTS = [
   {
     id: "1",

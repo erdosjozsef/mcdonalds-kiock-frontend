@@ -1,5 +1,5 @@
 import React from "react";
-import "./Sidebar.css";
+import classes from "./Sidebar.module.css";
 
 const SidebarItem = (props) => {
   return (
@@ -7,9 +7,9 @@ const SidebarItem = (props) => {
       <img
         src={props.imageUrl}
         alt=""
-        class="img-fluid rounded-circle mb-2 mcdonalds_logo category_logo"
+        class={`img-fluid rounded-circle mb-2 ${classes.mcdonalds_logo} ${classes.category_logo}`}
       />
-      <h4 className="category_sidebar_name">{props.name}</h4>
+      <h4 className={`${classes.category_sidebar_name}`}>{props.name}</h4>
     </React.Fragment>
   );
 };
