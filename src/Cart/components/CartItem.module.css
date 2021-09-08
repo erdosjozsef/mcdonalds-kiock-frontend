@@ -63,3 +63,11 @@ ion-icon {
 ion-icon {
   color: black;
 }
+
+.cart_text {
+  color: black;
+}
+
+.cart_bott {
+  padding-bottom: 20px;
+}

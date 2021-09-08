@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../../Shared/components/Banner";
 import CartItem from "./CartItem";
+import ButtonActions from "./CartButtonAction";
 import { useSelector } from "react-redux";
 
 const Cart = () => {
@@ -21,6 +22,7 @@ const Cart = () => {
           }}
         />
       ))}
+      <ButtonActions />
     </React.Fragment>
   );
 };

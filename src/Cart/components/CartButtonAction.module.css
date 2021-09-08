@@ -1,0 +1,13 @@
+.information {
+  border-style: groove;
+  border-radius: 8px;
+  background: #dcdcdc;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.act_buttons {
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}

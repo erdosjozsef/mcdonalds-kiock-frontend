@@ -10,7 +10,7 @@ const CartIcon = () => {
       <Link to="/cart">
         <ion-icon name="bag-outline"></ion-icon>
         <div className={`${classes.cart_number}`}>{cartQuantity}</div>
-        <h5>Cart</h5>
+        <h5 className={`${classes.cart_text}`}>Cart</h5>
       </Link>
     </div>
   );

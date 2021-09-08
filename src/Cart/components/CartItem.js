@@ -52,7 +52,9 @@ const CartItem = (props) => {
           </div>
         </div>
       </div>
-      <div className="container d-flex justify-content-center">
+      <div
+        className={`container d-flex justify-content-center ${classes.cart_bott}`}
+      >
         <div className="row">
           <div className="col-md-12">
             <div className="input-group">
