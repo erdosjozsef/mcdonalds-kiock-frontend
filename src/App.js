@@ -15,7 +15,7 @@ const App = () => {
         <Route path="/choice" exact>
           <Choice />
         </Route>
-        <Route path="/order" exact>
+        <Route path="/order/:categoryName" exact>
           <Order />
         </Route>
         <Route path="/cart" exact>

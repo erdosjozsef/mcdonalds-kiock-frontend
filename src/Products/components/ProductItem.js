@@ -16,14 +16,14 @@ const ProductItem = (props) => {
 
   return (
     <React.Fragment>
-      <div onClick={showModalHandler} class="col-md-4">
+      <div onClick={showModalHandler} className="col-md-4">
         <img
           src={props.imageUrl}
           alt={props.name}
-          class={`img-fluid rounded-circle ${classes.product_image}`}
+          className={`img-fluid rounded-circle ${classes.product_image}`}
         />
-        <h5 class={`${classes.product_name}`}>{props.name}</h5>
-        <div class={`${classes.top_right}`}>${props.price}</div>
+        <h5 className={`${classes.product_name}`}>{props.name}</h5>
+        <div className={`${classes.top_right}`}>${props.price}</div>
       </div>
       {showModal && (
         <Modal onCloseModal={hideModalHandler} extraItem={props.extraItem} />

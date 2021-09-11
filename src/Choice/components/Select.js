@@ -43,9 +43,9 @@ const Select = () => {
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm d-flex justify-content-around mb-5">
-            <div class="imgContainer">
+        <div className="row">
+          <div className="col-sm d-flex justify-content-around mb-5">
+            <div className="imgContainer">
               <div>
                 <ion-icon
                   className={`${classes.test}`}
@@ -53,7 +53,7 @@ const Select = () => {
                 ></ion-icon>
               </div>
               <Link to="/order">
-                <div class={`${classes.imgButton}`}>
+                <div className={`${classes.imgButton}`}>
                   <button
                     onClick={setInEatHandler}
                     className={`${classes.action_button_eat}`}

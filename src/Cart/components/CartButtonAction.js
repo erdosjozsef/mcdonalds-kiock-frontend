@@ -1,8 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./CartButtonAction.module.css";
-
+import { useHttpClient } from "../../hook/http-hook";
+import { useHistory } from "react-router-dom";
 const CardButtonAction = () => {
+  const history = useHistory();
+  const { isLoading, error, sendRequest, clearError } = useHttpClient();
+
+  const sendOrderHandler = async (order) => {
+    try {
+      await sendRequest(
+        "http://localhost:5000/api/order",
+        "POST",
+        JSON.stringify({
+          products: [
+            { productId: 5, quantity: 1 },
+            { productId: 3, quantity: 2 },
+          ],
+          subTotal: 44,
+        }),
+        {
+          "Content-Type": "application/json",
+        }
+      );
+      history.push("/");
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <React.Fragment>
       <div
@@ -39,15 +64,13 @@ const CardButtonAction = () => {
           </div>
 
           <div className="col-md-6 d-flex justify-content-center">
-            {" "}
-            <Link to="/payment">
-              <button
-                type="button"
-                className={`btn btn-danger ${classes.act_buttons}`}
-              >
-                Go to the order
-              </button>{" "}
-            </Link>
+            <button
+              onClick={sendOrderHandler}
+              type="button"
+              className={`btn btn-danger ${classes.act_buttons}`}
+            >
+              Go to the order
+            </button>{" "}
           </div>
         </div>
       </div>

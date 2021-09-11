@@ -4,7 +4,8 @@ import { useDispatch } from "react-redux";
 import { cartActions } from "../../store/cart-slice";
 
 const CartItem = (props) => {
-  const { name, quantity, total, price, id, imageUrl } = props.item;
+  const { name, quantity, price, id, imageUrl } = props.item;
+  const productPrice = quantity * price;
   const dispatch = useDispatch();
 
   const removeItemHandler = () => {
@@ -35,7 +36,7 @@ const CartItem = (props) => {
             className={`col-md-auto align-self-center ${classes.cart_product_name}`}
           >
             {quantity} x {name} <br />
-            300 Cal ${price.toFixed(2) * quantity}
+            300 Cal ${productPrice.toFixed(2)}
             <div className="row">
               <div className={`col p-3 ${classes.update_ing}`}>
                 Want to change ingredients?
